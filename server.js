@@ -11,7 +11,6 @@ const userRoutes = require("./routes/users.js");
 const postRoutes = require("./routes/posts.js");
 const convRoutes = require("./routes/conversation.js");
 const messageRoutes = require("./routes/message.js");
-const { rmSync } = require("fs");
 
 dotenv.config();
 const connect = async () => {
