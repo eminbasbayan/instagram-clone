@@ -4,8 +4,8 @@
 - This project includes operations such as Login/Register, Follow/Unfollow, Post Like/Dislike, Instant Messaging with Socket io;
 - Each user's profile and information are kept in the MongoDB database;
 
-[Only Back-End Repo](https://github.com/eminbasbayan/instagram-clone/tree/backend "Only Backend Repo")
-[Only Front-End Repo](https://github.com/eminbasbayan/instagram-clone/tree/frontend "Only Backend Repo")
+1. [Only Back-End Repo](https://github.com/eminbasbayan/instagram-clone/tree/backend "Only Backend Repo")
+2. [Only Front-End Repo](https://github.com/eminbasbayan/instagram-clone/tree/frontend "Only Backend Repo")
 
 # Images From the Project
 ### 1- Login Page
