@@ -1,0 +1,45 @@
+.auth-page {
+  height: 100vh;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.auth-page h1 {
+  text-align: center;
+}
+
+.auth-page .form {
+  background: white;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  row-gap: 10px;
+}
+
+.auth-page .form .form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-page .form .auth-link {
+  color: blue;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* responsive  */
+
+@media (max-width: 768px) {
+  .auth-page .form {
+    width: 350px;
+  }
+
+  .auth-page h1 {
+    font-size: 24px;
+    padding: 0 10px;
+  }
+}
