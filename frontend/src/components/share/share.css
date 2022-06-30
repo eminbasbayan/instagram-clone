@@ -1,0 +1,78 @@
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 500px;
+  height: auto;
+  z-index: 999;
+  outline: none;
+  border-radius: 10px;
+}
+
+.modal-head {
+  text-align: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.modal-body-top {
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+}
+
+.modal-body-top .modal-text-input {
+  width: 100%;
+  height: 46px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  padding-left: 12px;
+  outline: none;
+}
+
+.modal-buttons {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.share-img-wrapper {
+  position: relative;
+  margin-top: 8px;
+}
+
+.cancel-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .modal-box {
+    width: 100%;
+  }
+
+  .modal-box .modal-buttons {
+    justify-content: center;
+  }
+  .modal-box .modal-buttons button:not(:first-child) {
+    display: none;
+  }
+}

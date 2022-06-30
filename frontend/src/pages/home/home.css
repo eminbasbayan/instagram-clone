@@ -1,0 +1,26 @@
+.home-page {
+  margin: 88px 0;
+  display: flex;
+}
+
+.home-page .home-page-left {
+  flex: 3;
+}
+
+.home-page .home-page-left .posts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.home-page .home-page-right {
+  flex: 2;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .home-page-right {
+    display: none;
+  }
+}

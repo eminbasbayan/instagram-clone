@@ -1,0 +1,167 @@
+.profile-page {
+  margin: 88px 0;
+}
+
+.profile-page .profile-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-page .profile-head .head-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-page .profile-head .head-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-page .head-right-top {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.profile-page .profile-page-buttons {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.profile-page .profile-page-buttons button:not(:first-child) {
+  background: #fafafa;
+}
+
+.profile-page .profile-head .profile-page-username {
+  font-size: 28px;
+}
+
+.profile-page .head-right-center {
+  display: flex;
+  column-gap: 40px;
+  margin: 24px 0 20px 0;
+}
+
+.profile-page .head-right-center > div {
+  display: flex;
+  column-gap: 4px;
+}
+
+.profile-page .head-right-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+/* profile body section  */
+
+.profile-body {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+/*!  nav tabs */
+
+.profile-body .profile-nav-tabs {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.profile-body .profile-nav-tabs > button {
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  column-gap: 8px;
+  position: relative;
+}
+
+.profile-body .profile-nav-tabs > button.active:after {
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: -10px;
+}
+
+/*! post grid  */
+
+.profile-body .profile-post-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.profile-body .profile-post-grid .grid-post {
+  max-width: 310px;
+  position: relative;
+}
+
+.profile-body .profile-post-grid .grid-post img {
+  height: 300px;
+}
+
+.profile-body .profile-post-grid .grid-post .like-icon-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.profile-body .profile-post-grid .grid-post:hover .like-icon-wrapper {
+  opacity: 1;
+}
+
+.profile-post-grid .like-icon {
+  color: red;
+}
+
+.profile-post-grid b {
+  color: #fff;
+}
+
+/* responsive */
+
+@media (max-width: 576px) {
+  .profile-page .profile-head {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .profile-page .profile-head .profile-page-username {
+    font-size: 20px;
+  }
+
+  .head-right-center {
+    justify-content: center;
+  }
+
+  .head-right-bottom {
+    text-align: center;
+  }
+
+  .profile-nav-tabs {
+    justify-content: center !important;
+    column-gap: 10px;
+  }
+
+  .profile-nav-tabs button:not(:first-child) {
+    display: none;
+  }
+
+  .profile-body .profile-post-grid {
+    grid-template-columns: auto;
+  }
+}
